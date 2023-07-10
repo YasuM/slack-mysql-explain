@@ -12,7 +12,7 @@ resource "aws_subnet" "public_subnet_1a" {
   map_public_ip_on_launch = true
   availability_zone       = "ap-northeast-1a"
   tags = {
-    Name = "subnet-db-1a"
+    Name = "subnet-public-1a"
   }
 }
 
@@ -22,7 +22,7 @@ resource "aws_subnet" "public_subnet_1c" {
   map_public_ip_on_launch = true
   availability_zone       = "ap-northeast-1c"
   tags = {
-    Name = "subnet-db-1c"
+    Name = "subnet-public-1c"
   }
 }
 
