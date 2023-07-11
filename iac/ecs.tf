@@ -21,8 +21,7 @@ resource "aws_ecs_service" "service" {
 
   desired_count = 1
   network_configuration {
-    assign_public_ip = true
-    subnets          = [aws_subnet.public_subnet_1a.id, aws_subnet.public_subnet_1c.id]
+    subnets = [aws_subnet.private_subnet_1a.id, aws_subnet.private_subnet_1c.id]
   }
 }
 

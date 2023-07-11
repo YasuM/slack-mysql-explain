@@ -24,12 +24,12 @@ resource "aws_iam_policy" "policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action   = ["ssm:GetParameters"]
-        Effect   = "Allow"
+        Action = ["ssm:GetParameters"]
+        Effect = "Allow"
         Resource = [
-            "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_signing_secret.name}",
-            "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_app_token.name}",
-            "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_bot_token.name}",
+          "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_signing_secret.name}",
+          "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_app_token.name}",
+          "arn:aws:ssm:ap-northeast-1:223755632708:parameter/${aws_ssm_parameter.slack_bot_token.name}",
 
         ]
       },
